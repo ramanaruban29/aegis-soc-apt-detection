@@ -1,0 +1,58 @@
+/home/ramanan/apt_project/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/ramanan/apt_project/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/ramanan/apt_project/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/ramanan/apt_project/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/ramanan/apt_project/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/ramanan/apt_project/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+CICAPT 63 features, DAPT 79 features, SHARED (ports excluded): 17
+   'feat_flow_duration'                          <-> 'Flow Duration'
+   'feat_Header_Length'                          <-> 'Fwd Header Length'
+   'feat_Protocol_Type'                          <-> 'Protocol'
+   'feat_Rate'                                   <-> 'Flow Packets/s'
+   'feat_Srate'                                  <-> 'Fwd Packets/s'
+   'feat_Drate'                                  <-> 'Bwd Packets/s'
+   'feat_fin_count'                              <-> 'FIN Flag Count'
+   'feat_syn_count'                              <-> 'SYN Flag Count'
+   'feat_rst_count'                              <-> 'RST Flag Count'
+   'feat_ack_count'                              <-> 'ACK Flag Count'
+   'feat_urg_count'                              <-> 'URG Flag Count'
+   'feat_Min'                                    <-> 'Packet Length Min'
+   'feat_Max'                                    <-> 'Packet Length Max'
+   'feat_AVG'                                    <-> 'Packet Length Mean'
+   'feat_Std'                                    <-> 'Packet Length Std'
+   'feat_Variance'                               <-> 'Packet Length Variance'
+   'feat_IAT'                                    <-> 'Flow IAT Mean'
+CICAPT unmatched: ['feat_Source_Port', 'feat_Destination_Port', 'feat_Duration', 'feat_fin_flag_number', 'feat_syn_flag_number', 'feat_rst_flag_number', 'feat_psh_flag_number', 'feat_ack_flag_number', 'feat_urg_flag_number', 'feat_ece_flag_number', 'feat_cwr_flag_number', 'feat_max_duration', 'feat_min_duration', 'feat_sum_duration', 'feat_average_duration', 'feat_std_duration', 'feat_CoAP', 'feat_HTTP', 'feat_HTTPS', 'feat_DNS', 'feat_Telnet', 'feat_SMTP', 'feat_SSH', 'feat_IRC', 'feat_TCP', 'feat_UDP', 'feat_DHCP', 'feat_ARP', 'feat_ICMP', 'feat_IGMP', 'feat_IPv', 'feat_LLC', 'feat_Tot_sum', 'feat_Tot_size', 'feat_Number', 'feat_MAC', 'feat_Magnitue', 'feat_Radius', 'feat_Covariance', 'feat_Weight', 'feat_DS_status', 'feat_Fragments', 'feat_Sequence_number', 'feat_Protocol_Version', 'feat_flow_idle_time', 'feat_flow_active_time']
+DAPT unmatched  : ['Src Port', 'Dst Port', 'Total Fwd Packet', 'Total Bwd packets', 'Total Length of Fwd Packet', 'Total Length of Bwd Packet', 'Fwd Packet Length Max', 'Fwd Packet Length Min', 'Fwd Packet Length Mean', 'Fwd Packet Length Std', 'Bwd Packet Length Max', 'Bwd Packet Length Min', 'Bwd Packet Length Mean', 'Bwd Packet Length Std', 'Flow Bytes/s', 'Flow IAT Std', 'Flow IAT Max', 'Flow IAT Min', 'Fwd IAT Total', 'Fwd IAT Mean', 'Fwd IAT Std', 'Fwd IAT Max', 'Fwd IAT Min', 'Bwd IAT Total', 'Bwd IAT Mean', 'Bwd IAT Std', 'Bwd IAT Max', 'Bwd IAT Min', 'Fwd PSH Flags', 'Bwd PSH Flags', 'Fwd URG Flags', 'Bwd URG Flags', 'Bwd Header Length', 'PSH Flag Count', 'CWR Flag Count', 'ECE Flag Count', 'Down/Up Ratio', 'Average Packet Size', 'Fwd Segment Size Avg', 'Bwd Segment Size Avg', 'Fwd Bytes/Bulk Avg', 'Fwd Packet/Bulk Avg', 'Fwd Bulk Rate Avg', 'Bwd Bytes/Bulk Avg', 'Bwd Packet/Bulk Avg', 'Bwd Bulk Rate Avg', 'Subflow Fwd Packets', 'Subflow Fwd Bytes', 'Subflow Bwd Packets', 'Subflow Bwd Bytes', 'FWD Init Win Bytes', 'Bwd Init Win Bytes', 'Fwd Act Data Pkts', 'Fwd Seg Size Min', 'Active Mean', 'Active Std', 'Active Max', 'Active Min', 'Idle Mean', 'Idle Std']
+CICAPT subset 2001004 flows (1004 attacks) | DAPT 86691 flows (22979 attacks)
+  [DAPT_to_CICAPT seed 0 src] lgbm_noscore  fpr0.002: MCC 0.000 rec 0.000 FP 0 | fpr0.005: MCC 0.000 rec 0.000 FP 0 | fpr0.01: MCC 0.000 rec 0.000 FP 0 | oracle 0.014
+  [DAPT_to_CICAPT seed 0 src] rf            fpr0.002: MCC 0.000 rec 0.000 FP 0 | fpr0.005: MCC 0.000 rec 0.000 FP 0 | fpr0.01: MCC 0.000 rec 0.000 FP 0 | oracle -0.000
+  [DAPT_to_CICAPT seed 0 src] et            fpr0.002: MCC 0.000 rec 0.000 FP 0 | fpr0.005: MCC 0.000 rec 0.000 FP 0 | fpr0.01: MCC 0.000 rec 0.000 FP 0 | oracle 0.021
+  [DAPT_to_CICAPT seed 0 src] ada           fpr0.002: MCC 0.000 rec 0.000 FP 0 | fpr0.005: MCC 0.000 rec 0.000 FP 0 | fpr0.01: MCC 0.000 rec 0.000 FP 0 | oracle 0.002
+/home/ramanan/apt_project/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/ramanan/apt_project/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/ramanan/apt_project/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/ramanan/apt_project/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/ramanan/apt_project/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/ramanan/apt_project/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+  [DAPT_to_CICAPT seed 0 tgt] lgbm_noscore  fpr0.002: MCC -0.005 rec 0.001 FP 100071 | fpr0.005: MCC -0.006 rec 0.001 FP 123731 | fpr0.01: MCC -0.006 rec 0.002 FP 131757 | oracle -0.000
+  [DAPT_to_CICAPT seed 0 tgt] rf            fpr0.002: MCC 0.000 rec 0.000 FP 0 | fpr0.005: MCC 0.000 rec 0.000 FP 0 | fpr0.01: MCC 0.000 rec 0.000 FP 0 | oracle -0.000
+  [DAPT_to_CICAPT seed 0 tgt] et            fpr0.002: MCC 0.000 rec 0.000 FP 0 | fpr0.005: MCC 0.000 rec 0.000 FP 0 | fpr0.01: MCC 0.000 rec 0.000 FP 0 | oracle 0.004
+  [DAPT_to_CICAPT seed 0 tgt] ada           fpr0.002: MCC -0.001 rec 0.007 FP 18219 | fpr0.005: MCC -0.002 rec 0.009 FP 40874 | fpr0.01: MCC -0.002 rec 0.012 FP 46408 | oracle 0.019
+saved /mnt/d/dapt_work/results_cross/DAPT_to_CICAPT_seed00.json
+/home/ramanan/apt_project/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/home/ramanan/apt_project/venv/lib/python3.12/site-packages/sklearn/utils/validation.py:2691: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(

@@ -1,0 +1,6 @@
+{"feat_flow_duration":"Flow Duration","feat_Header_Length":"Fwd Header Length","feat_Protocol_Type":"Protocol",
+ "feat_Rate":"Flow Packets/s","feat_Srate":"Fwd Packets/s","feat_Drate":"Bwd Packets/s",
+ "feat_fin_count":"FIN Flag Count","feat_syn_count":"SYN Flag Count","feat_rst_count":"RST Flag Count",
+ "feat_ack_count":"ACK Flag Count","feat_urg_count":"URG Flag Count",
+ "feat_Min":"Packet Length Min","feat_Max":"Packet Length Max","feat_AVG":"Packet Length Mean",
+ "feat_Std":"Packet Length Std","feat_Variance":"Packet Length Variance","feat_IAT":"Flow IAT Mean"}
